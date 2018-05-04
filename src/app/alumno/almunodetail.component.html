@@ -1,0 +1,19 @@
+<div *ngIf="alumno_selected">
+    <h2>{{ alumno_selected.nombre | uppercase }} Details</h2>
+    <div>
+        <label>Nombre:
+            <input value={{alumno_selected.nombre}} />
+        </label>
+    </div>
+    <div>
+        <label>Edad:
+            <input value={{alumno_selected.edad}} />
+        </label>
+    </div>
+    <div>
+        <label>Nota:
+            <input value={{alumno_selected.nota}}/>
+        </label>
+    </div>
+    <button (click)="atras()">Atrás</button>
+</div>

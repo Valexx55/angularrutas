@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+    <p>Alumnos Participantes</p>
+  <ul>
+      <li *ngFor="let alumno of lista_alumnos; let i = index">
+      <a routerLink="/alumno/{{i}}">
+        {{ alumno.nombre }}
+      </a>
+      </li>
+   
+  </ul>
+</div>
+
